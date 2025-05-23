@@ -1,0 +1,198 @@
+/* style.css */
+
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #1e40af;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #1e40af;
+}
+
+/* Hero */
+.hero {
+  background-color: #e0e7ff;
+  padding: 60px 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  color: #1e40af;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #4b5563;
+}
+
+.hero img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #1e3a8a;
+  margin-top: 20px;
+}
+
+/* Section umum */
+.section {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.section:nth-of-type(even) {
+  background-color: #f3f4f6;
+}
+
+.section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1e40af;
+}
+
+/* Projects */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+}
+
+.project-item h4 {
+  font-size: 1.2rem;
+  color: #1e40af;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+.contact-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-links li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.contact-links a {
+  color: #1e40af;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+/* Contact Section - Centered */
+.contact-links {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: 0 auto; /* ini yang membuatnya ke tengah */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.contact-links h3 {
+  color: #1e40af;
+  margin-bottom: 20px;
+}
+
+.contact-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-links li {
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+}
+
+.contact-links i {
+  color: #1e40af;
+  margin-right: 8px;
+}
+
+.contact-links a {
+  color: #1e40af;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
